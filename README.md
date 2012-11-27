@@ -1,50 +1,40 @@
-# [Roots Theme](http://www.rootstheme.com/)
+# Sassy Roots
 
-Roots is a starting WordPress theme made for developers that’s based on [HTML5 Boilerplate](http://html5boilerplate.com/) and [Bootstrap from Twitter](http://twitter.github.com/bootstrap/).
-
-## Installation
-
-* Clone the git repo - `git clone git://github.com/retlehs/roots.git` - or [download it](https://github.com/retlehs/roots/zipball/master)
-* Reference the [theme activation](/retlehs/roots/blob/master/doc/activation.md) documentation to understand everything that happens once you activate Roots
-
-## Configuration
-
-Edit `lib/config.php` to enable or disable support for various theme functions and to define constants that are used throughout the theme.
-
-Edit `lib/init.php` to setup custom navigation menus and post thumbnail sizes.
-
-## Documentation
-
-Take a look at the [documentation table of contents](/retlehs/roots/blob/master/doc/TOC.md).
+Roots is my Wordpress base theme of choice, but I've made several changes to reflect my personal workflow and preferences.
 
 ## Features
+* Bootstrap Less has been converted to Sass
+* Bootstrap Glyphicons replaced with [/gregoryloucas/Font-Awesome-More](Font Awesome More)
+* Utilizes Compass
+* Optimized for use with CSS and JS preprocessors (i.e., CodeKit)
 
-* HTML5 Boilerplate’s markup and `.htaccess`
-* Bootstrap from Twitter
-* Theme wrapper
-* Root relative URLs
-* Clean URLs (no more `/wp-content/`)
-* All static theme assets are rewritten to the website root (`/assets/css/`, `/assets/img/`, and `/assets/js/`)
-* Cleaner HTML output of navigation menus
-* Cleaner output of `wp_head` and enqueued scripts/styles
-* Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
-* [Multilingual ready](http://www.rootstheme.com/wpml/) (English, Spanish, French, Italian, Dutch, Brazilian Portuguese, Macedonian, Finnish, Danish, Turkish, Swedish, Bulgarian, Norwegian, Catalan, Polish, Hungarian, Russian)
+## Documentation
+**CSS**
+* CSS for screen compiled from /sass/screen.scss and output to /assets/css/screen.css 
+* CSS for print compiled from /sass/print.scss and output to /assets/css/print.css
+* Roots editor-styles also editable at /sass/editor-styles.scss
+**Javascript**
+* Two files called:
+	1. code(/assets/js/plugins-min.js)
+	2. code(/assets/js/main-min.js)
+* code(plugins.js) includes Bootstrap scripts, as well as any additional plugins
+* code(main.js) 
+* Setup your preprocessor to output these files with code(-min.js) appended
+* These filenames can be modified at code(lib/scripts.php)
 
-## Contributing
+## Installation
+* Clone repo - `git clone git://github.com/jaredhughes/sassy-roots.git`
+* Reference the [theme activation](/retlehs/roots/blob/master/doc/activation.md) documentation to understand everything that happens once you activate Roots
 
-Everyone is welcome to help [contribute](/retlehs/roots/blob/master/CONTRIBUTING.md) and improve this project. There are several ways you can contribute:
+## Planned
+* Add theme options for javascript source file names
+* Strip Bootstrap design elements
+* Add basic print stylesheet
 
-* Reporting issues (please read [issue guidelines](https://github.com/necolas/issue-guidelines))
-* Suggesting new features
-* Writing or editing [docs](/retlehs/roots/blob/master/doc/TOC.md)
-* Writing or refactoring code
-* Fixing [issues](https://github.com/retlehs/roots/issues)
-* Replying to questions on the [Google Group](http://groups.google.com/group/roots-theme)
+## [Roots Theme](http://www.rootstheme.com/)
 
-## Project information
+Original project information:
 
 * Source: [https://github.com/retlehs/roots](https://github.com/retlehs/roots)
+* Documentation: [/retlehs/roots/blob/master/doc/TOC.md](/retlehs/roots/blob/master/doc/TOC.md)
 * Web: [http://www.rootstheme.com/](http://www.rootstheme.com/)
-* Google Group: [http://groups.google.com/group/roots-theme](http://groups.google.com/group/roots-theme)
-* Twitter Updates: [@retlehs](https://twitter.com/#!/retlehs)
-* Contributors: [https://github.com/retlehs/roots/contributors](https://github.com/retlehs/roots/contributors)
