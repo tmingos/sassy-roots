@@ -10,8 +10,8 @@ Roots is my Wordpress base theme of choice, but I've made several changes to ref
 
 ## Documentation
 **CSS**
-* CSS for screen compiled from `/sass/screen.scss` and output to `/assets/css/screen.css`
-* CSS for print compiled from `/sass/print.scss` and output to `/assets/css/print.css`
+* Styles for screen compiled at `/sass/screen.scss` and output to `/assets/css/screen.css`
+* Styles for print compiled at `/sass/print.scss` and output to `/assets/css/print.css`
 * Roots Editor Styles also editable at `/sass/editor-styles.scss`
 
 **Javascript**
@@ -24,10 +24,10 @@ Roots is my Wordpress base theme of choice, but I've made several changes to ref
 * These filenames can be modified at `lib/scripts.php`
 
 ## Installation
-* Clone repo - `git clone git://github.com/jaredhughes/sassy-roots.git`
+* Clone repo: `git clone git://github.com/jaredhughes/sassy-roots.git`
 * Reference the [theme activation](/retlehs/roots/blob/master/doc/activation.md) documentation to understand everything that happens once you activate Roots
 
-## Planned
+## Planned Features
 * Add theme options for javascript source file names
 * Strip Bootstrap design elements
 * Add basic print stylesheet
