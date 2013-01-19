@@ -2,17 +2,11 @@
 /**
  * Scripts and stylesheets
  *
- * Enqueue stylesheets in the following order:
- * 1. /theme/assets/css/bootstrap.css
- * 2. /theme/assets/css/bootstrap-responsive.css
- * 3. /theme/assets/css/app.css
- * 4. /child-theme/style.css (if a child theme is activated)
- *
  * Enqueue scripts in the following order:
  * 1. /theme/assets/js/vendor/modernizr-2.6.2.min.js  (in head.php)
  * 2. jquery-1.9.0.min.js via Google CDN              (in head.php)
- * 3. /theme/assets/js/plugins.js
- * 4. /theme/assets/js/main.js
+ * 3. /theme/assets/js/plugins-min.js
+ * 4. /theme/assets/js/main-min.js
  */
 
 function roots_scripts() {
