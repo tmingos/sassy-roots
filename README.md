@@ -10,14 +10,14 @@ Roots is my Wordpress base theme of choice, but I've made several changes to ref
 
 ## Documentation
 **CSS**
-* Styles for screen compiled at `/sass/screen.scss` and output to `/assets/css/screen.css`
-* Styles for print compiled at `/sass/print.scss` and output to `/assets/css/print.css`
+* Styles for screen compiled at `/sass/screen.scss` and output to `/css/screen.css`
+* Styles for print compiled at `/sass/print.scss` and output to `/css/print.css`
 * Roots Editor Styles also editable at `/sass/editor-styles.scss`
 
 **Javascript**
 * Two files called:
-	1. `/assets/js/plugins-min.js`
-	2. `/assets/js/main-min.js`
+	1. `/js/plugins-min.js`
+	2. `/js/main-min.js`
 * `plugins.js` includes Bootstrap scripts, as well as any additional plugins
 * `main.js` should include your custom jQuery/Javascript
 * Setup your preprocessor to output these files with `-min.js` appended
