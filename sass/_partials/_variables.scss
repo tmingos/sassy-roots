@@ -58,6 +58,23 @@ $headingsFontWeight:    bold !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 
 
+// Social Media Colors
+// -------------------------
+$googlePlusRed:         #d34836 !default;
+$googlePlusDkGray:      #2d2d2d !default;
+$googlePlusLtGray:      #d2d2d2 !default;
+$facebook:              #3B5998 !default;
+$flickr:                #FE0883 !default;
+$foursquare:            #8FD400 !default;
+$instagram:             #4E433C !default;
+$linkedin:              #4875B4 !default;
+$tumblr:                #2B4964 !default;
+$twitter:               #33CCFF !default;
+$vimeo:                 #86B32D !default;
+$youtube:               #FF3333 !default;
+$pinterest:             #910101 !default;
+
+
 // Component sizing
 // -------------------------
 // Based on 14px font-size and 20px line-height
