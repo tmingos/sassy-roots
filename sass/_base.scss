@@ -1,15 +1,12 @@
 
 // Import Bootstrap Framework //
-@import "_partials/_bootstrap";
+@import "_bootstrap/bootstrap";
 
 // Import Bootstrap Responsive Grid //
-@import "_partials/_responsive";
+@import "_bootstrap/responsive";
 
-// Import Font Awesome More //
-@import "_partials/_font-awesome-more";
-
-// Uncomment if supporting IE7:
-// @import "partials/_font-awesome-more-ie7";
+// Import Font Awesome //
+@import "_fonts/font-awesome";
 
 // Import Compass CSS3 Mixins //
 @import "compass/css3";
