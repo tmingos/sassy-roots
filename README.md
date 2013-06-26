@@ -4,7 +4,7 @@ Roots is my Wordpress base theme of choice, but I've made several changes to ref
 
 ## Features
 * Bootstrap Less has been converted to Sass
-* Bootstrap Glyphicons replaced with [Font Awesome More](/gregoryloucas/Font-Awesome-More)
+* Bootstrap Glyphicons replaced with [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 * Utilizes Compass
 * Optimized for use with CSS and JS preprocessors (i.e., CodeKit)
 
