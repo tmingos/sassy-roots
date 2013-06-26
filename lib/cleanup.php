@@ -180,7 +180,7 @@ if (roots_enable_root_relative_urls()) {
     'stylesheet_directory_uri',
     'template_directory_uri',
     'plugins_url',
-    'the_permalink',
+//    'the_permalink',
     'wp_list_pages',
     'wp_list_categories',
     'wp_nav_menu',
@@ -510,7 +510,7 @@ add_filter('request', 'roots_request_filter');
  * Tell WordPress to use searchform.php from the templates/ directory
  */
 function roots_get_search_form() {
-  locate_template('/templates/searchform.php', true, true);
+  locate_template('inc/searchform.php', true, true);
 }
 
 add_filter('get_search_form', 'roots_get_search_form');

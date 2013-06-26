@@ -2,7 +2,7 @@
   <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php get_template_part('templates/entry-meta'); ?>
+      <?php get_template_part('inc/entry-meta'); ?>
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
@@ -11,6 +11,6 @@
       <?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
       <?php the_tags('<ul class="entry-tags"><li>','</li><li>','</li></ul>'); ?>
     </footer>
-    <?php comments_template('/templates/comments.php'); ?>
+    <?php include('inc/comments.php'); ?>
   </article>
 <?php endwhile; ?>
