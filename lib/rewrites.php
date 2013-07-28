@@ -8,7 +8,7 @@
  *   /wp-content/themes/themename/css/ to /css/
  *   /wp-content/themes/themename/js/  to /js/
  *   /wp-content/themes/themename/img/ to /img/
- *   /wp-content/plugins/              to /plugins/
+ *   /wp-content/plugins/              to /modules/
  *
  * If you aren't using Apache, alternate configuration settings can be found in the docs.
  *
@@ -20,7 +20,7 @@ function roots_add_rewrites($content) {
     'css/(.*)'      => THEME_PATH . '/css/$1',
     'js/(.*)'       => THEME_PATH . '/js/$1',
     'img/(.*)'      => THEME_PATH . '/img/$1',
-    'plugins/(.*)'  => RELATIVE_PLUGIN_PATH . '/$1'
+    'modules/(.*)'  => RELATIVE_PLUGIN_PATH . '/$1'
   );
   $wp_rewrite->non_wp_rules = array_merge($wp_rewrite->non_wp_rules, $roots_new_non_wp_rules);
   return $content;
@@ -28,7 +28,7 @@ function roots_add_rewrites($content) {
 
 function roots_clean_urls($content) {
   if (strpos($content, RELATIVE_PLUGIN_PATH) > 0) {
-    return str_replace('/' . RELATIVE_PLUGIN_PATH,  '/plugins', $content);
+    return str_replace('/' . RELATIVE_PLUGIN_PATH,  '/modules', $content);
   } else {
     return str_replace('/' . THEME_PATH, '', $content);
   }
