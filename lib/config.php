@@ -21,10 +21,10 @@ define('POST_EXCERPT_LENGTH', 40);
 function roots_main_class() {
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
-    $class = 'span8';
+    $class = 'col-sm-8';
   } else {
     // Classes on full width pages
-    $class = 'span12';
+    $class = 'col-sm-12';
   }
 
   return $class;
@@ -34,7 +34,7 @@ function roots_main_class() {
  * .sidebar classes
  */
 function roots_sidebar_class() {
-  return 'span4';
+  return 'col-sm-4';
 }
 
 /**
@@ -57,6 +57,13 @@ function roots_display_sidebar() {
     array(
       'is_404',
       'is_front_page'
+    ),
+    /**
+     * Page template checks (via is_page_template())
+     * Any of these page templates that return true won't show the sidebar
+     */
+    array(
+      'template-custom.php'
     )
   );
 
@@ -68,9 +75,9 @@ function roots_display_sidebar() {
  * and media embeds (in pixels).
  *
  * Example: If the content area is 640px wide, set $content_width = 620; so images and videos will not overflow.
- * Default: 940px is the default Bootstrap container width.
+ * Default: 1140px is the default Bootstrap container width.
  */
-if (!isset($content_width)) { $content_width = 940; }
+if (!isset($content_width)) { $content_width = 1140; }
 
 /**
  * Define helper constants

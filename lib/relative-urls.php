@@ -27,7 +27,7 @@ function roots_enable_root_relative_urls() {
 if (roots_enable_root_relative_urls()) {
   $root_rel_filters = array(
     'bloginfo_url',
-//    'the_permalink',
+    'the_permalink',
     'wp_list_pages',
     'wp_list_categories',
     'roots_wp_nav_menu_item',
